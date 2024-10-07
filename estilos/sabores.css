@@ -1,0 +1,169 @@
+/* Configurações Globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1b3a4b, #4f8a8b);
+    color: #333;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffb347;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 50px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ffdd59;
+}
+
+.cart-icon img {
+    width: 30px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.cart-icon img:hover {
+    transform: scale(1.1);
+}
+
+/* Introdução */
+.intro {
+    text-align: center;
+    padding: 50px 20px;
+    background-image: url('./images/praia.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.intro h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.intro p {
+    font-size: 1.2em;
+}
+
+/* Seção de Sabores */
+.sabores {
+    padding: 70px 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Cartões de Sabores */
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    width: 250px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.card .image {
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(135deg, #ffb347, #ffcc33);
+    border-radius: 15px;
+    position: relative;
+    background-image: url('./images/abacaxi.jpg');
+    background-size: cover;
+}
+
+.card h3 {
+    font-size: 1.5em;
+    color: #1b3a4b;
+    margin: 20px 0 10px;
+}
+
+.card p {
+    font-size: 1em;
+    color: #333;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.add-to-cart {
+    background-color: #ff7f50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-to-cart:hover {
+    background-color: #ffa07a;
+    transform: scale(1.1);
+}
+
+/* Animação de fundo tropical */
+@keyframes floating {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.card {
+    animation: floating 5s ease-in-out infinite;
+}
+
+/* Footer */
+footer {
+    background-color: #ffb347;
+    color: white;
+    text-align: center;
+    padding: 30px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1em;
+}

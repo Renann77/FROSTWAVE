@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f0f8ff;
+    color: #333;
+    background-image: url('./images/background-praia.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(255, 165, 0, 0.8); /* Cor laranja tropical */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffdd59; /* Amarelo ensolarado */
+}
+
+.login img {
+    width: 30px;
+    transition: transform 0.3s ease;
+}
+
+.login img:hover {
+    transform: scale(1.1);
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-image: url('./images/footer\ {\ background-color\ rgba\(255\,\ 165\,\ 0\,\ 0.8\);\ \ Cor\ laranja\ tropical\ \ color\ white;\ text-align\ center;\ padding\ 30px;\ box-shadow\ 0\ -4px\ 8px\ rgba\(0\,\ 0\,\ 0\,\ 0.1\);\ position\ relative;\ bottom\ 0;\ width\ .png');
+    background-size: cover;
+    background-position: center;
+    padding: 120px 20px;
+    color: white;
+    height: 80vh;
+    background-attachment: fixed;
+}
+
+.banner h1 {
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    font-weight: 700;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+}
+
+.cta {
+    background-color: #ff7f50; /* Coral */
+    color: white;
+    padding: 15px 40px;
+    border-radius: 30px;
+    border: none;
+    font-size: 1.3em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta:hover {
+    background-color: #ffa07a; /* Coral mais claro */
+    transform: translateY(-5px);
+}
+
+.sabores {
+    padding: 70px 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    
+}
+
+.sabores h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: #008080; /* Cor verde-água */
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 250px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 1.5em;
+    color: #1b3a4b;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: rgba(255, 165, 0, 0.8); /* Cor laranja tropical */
+    color: white;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    font-size: 1em;
+}
+
+footer p a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer p a:hover {
+    color: #ffdd59; /* Efeito hover com amarelo ensolarado */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .banner h1 {
+        font-size: 2.5em;
+    }
+    
+    .cta {
+        padding: 10px 25px;
+        font-size: 1.1em;
+    }
+    
+    .card {
+        width: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .banner h1 {
+        font-size: 2em;
+    }
+
+    .sabores {
+        padding: 50px 20px;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 300px;
+    }
+}
