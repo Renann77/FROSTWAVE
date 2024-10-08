@@ -18,12 +18,12 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: rgba(255, 165, 0, 0.8); /* Cor laranja tropical */
+   background-image: url("./images/navbar.avif");
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .logo img {
-    height: 50px;
+    height: 70px;
 }
 
 nav ul {
@@ -44,7 +44,7 @@ nav ul li a:hover {
 }
 
 .login img {
-    width: 30px;
+    width: 40px;
     transition: transform 0.3s ease;
 }
 
@@ -136,8 +136,35 @@ nav ul li a:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+.marketing {
+    padding: 50px 20px;
+    background-color: #f7b733; 
+    text-align: center;
+}
+
+.marketing h2 {
+    font-size: 2.5em;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.marketing-image img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.marketing-image img:hover {
+    cursor: pointer;
+    transform: scale(1.05); 
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
 footer {
-    background-color: rgba(255, 165, 0, 0.8); /* Cor laranja tropical */
+    background-image: url("./images/depositphotos_202103606-stock-photo-summer-vacation-white-sand-beach.jpg"); 
     color: white;
     text-align: center;
     padding: 30px;
