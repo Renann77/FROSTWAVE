@@ -40,7 +40,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ffdd59; /* Amarelo ensolarado */
+    color: #ffdd59;
 }
 
 .login img {
@@ -72,12 +72,14 @@ nav ul li a:hover {
     margin-bottom: 20px;
     letter-spacing: 2px;
     font-weight: 700;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+    text-shadow: 3px 3px 5px rgba(117, 216, 223, 0.3);
+    text-shadow: 3px 3px 5px rgb(255, 255, 255);
+    text-shadow: 3px 3px 5px rgba(0, 238, 255, 0.3);
+    border-radius:rgba(0, 238, 255, 0.3);;
 }
 
 .cta {
-    background-color: #ff7f50; /* Coral */
-    color: white;
+    background-color: #ff7f50;
     padding: 15px 40px;
     border-radius: 30px;
     border: none;
@@ -87,7 +89,7 @@ nav ul li a:hover {
 }
 
 .cta:hover {
-    background-color: #ffa07a; /* Coral mais claro */
+    background-color: #ffa07a;
     transform: translateY(-5px);
 }
 
@@ -101,7 +103,7 @@ nav ul li a:hover {
 .sabores h2 {
     font-size: 2.5em;
     margin-bottom: 50px;
-    color: #008080; /* Cor verde-água */
+    color: #008080; 
 }
 
 .card-container {
@@ -136,6 +138,9 @@ nav ul li a:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
+
+
+
 .marketing {
     padding: 50px 20px;
     background-color: #f7b733; 
@@ -149,19 +154,145 @@ nav ul li a:hover {
     margin-bottom: 20px;
 }
 
+
+.marketing-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
 .marketing-image img {
-    width: 80%;
-    max-width: 600px;
+    width: 400px;
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .marketing-image img:hover {
-    cursor: pointer;
     transform: scale(1.05); 
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
 }
+
+
+.marketing-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    text-align: left;
+    animation: floating 3s ease-in-out infinite;
+}
+
+.marketing-card h3 {
+    font-size: 2em;
+    color: #f7b733;
+    margin-bottom: 10px;
+}
+
+.marketing-card p {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.cta-marketing {
+    background-color: #ff7f50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-marketing:hover {
+    background-color: #ffa07a;
+    transform: scale(1.1);
+}
+
+
+
+/* Seção Sobre Nós */
+.sobre-nos {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #f7b733, #fc4a1a);
+    text-align: center;
+    color: white;
+    position: relative;
+    overflow: hidden;
+}
+
+
+
+.sobre-nos h2 {
+    font-size: 3em;
+    color: white;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+    font-family: 'Pacifico', cursive;
+    letter-spacing: 1px;
+}
+
+.sobre-nos-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.sobre-nos-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    text-align: left;
+    line-height: 1.8;
+    font-size: 1.3em;
+    color: #333;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.sobre-nos-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+
+.sobre-nos-card::before {
+    content: '';
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: url('./images/Captura\ de\ tela\ 2024-10-08\ 102042.png') no-repeat;
+    background-size: contain;
+    top: -40px;
+    right: -40px;
+    opacity: 0.5;
+    animation: float 5s ease-in-out infinite;
+}
+
+.sobre-nos-card h3 {
+    font-size: 1em;
+    color: #fc4a1a;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.sobre-nos-card p {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+
 
 footer {
     background-image: url("./images/depositphotos_202103606-stock-photo-summer-vacation-white-sand-beach.jpg"); 
@@ -185,10 +316,45 @@ footer p a {
 }
 
 footer p a:hover {
-    color: #ffdd59; /* Efeito hover com amarelo ensolarado */
+    color: #ffdd59; 
 }
 
-/* Responsividade */
+
+
+@keyframes floating {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+
+@media (max-width: 768px) {
+    .marketing-content {
+        flex-direction: column;
+    }
+
+    .marketing-card {
+        max-width: 100%;
+    }
+
+    .marketing-image img {
+        width: 90%;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .sobre-nos-card {
+        max-width: 100%;
+        padding: 20px;
+    }
+}
+
+
+
 @media (max-width: 768px) {
     .banner h1 {
         font-size: 2.5em;
